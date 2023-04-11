@@ -2,6 +2,10 @@
 
 class PessoaController
 {
+    public static function home()
+    {
+        include 'View/home.php';
+    }
 
     public static function index()
     {

@@ -1,102 +1,111 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
 
-    <title>My page title</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="/View/resource/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <!-- Here is our main header that is used across all the pages of our website -->
+  <title>My page title</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
 
+  <link rel="stylesheet" href="/View/resource/reset.css"/>
+  <link rel="stylesheet" href="/View/resource/css/materialize.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/View/resource/style.css">
+</head>
+
+<body>
+  <nav>
     <header>
-      <h1>Header</h1>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-
-      <!-- A Search form is another common non-linear way to navigate through a website. -->
-
-      <form>
-        <input type="search" name="q" placeholder="Search query" />
-        <input type="submit" value="Go!" />
-      </form>
-    </nav>
-
-    <!-- Here is our page's main content -->
-    <main>
-      <!-- It contains an article -->
-      <article>
-        <h2>Article heading</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
-          lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
-          viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
-          et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
-          congue enim, ut porta lorem lacinia consectetur.
-        </p>
-
-        <h3>Subsection</h3>
-
-        <p>
-          Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
-          Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
-        </p>
-
-        <p>
-          Pelientesque auctor nisi id magna consequat sagittis. Curabitur
-          dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
-          Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
-        </p>
-
-        <h3>Another subsection</h3>
-
-        <p>
-          Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
-          soclis natoque penatibus et manis dis parturient montes, nascetur
-          ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
-          facilisis semper ac in est.
-        </p>
-
-        <p>
-          Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
-          tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
-          ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
-          diam iaculis velit, is fringille sem nunc vet mi.
-        </p>
-      </article>
-
-      <!-- the aside content can also be nested within the main content -->
-      <aside>
-        <h2>Related</h2>
-
-        <ul>
-          <li><a href="#">Oh I do like to be beside the seaside</a></li>
-          <li><a href="#">Oh I do like to be beside the sea</a></li>
-          <li><a href="#">Although in the North of England</a></li>
-          <li><a href="#">It never stops raining</a></li>
-          <li><a href="#">Oh well…</a></li>
+      <div class="caixa">
+        <img src="/View/resource/logo.png" class="brand-logo center" width="110px" alt="logotipo">
+        <ul class="menu">
+          <li><a href="/#">Home</a></li>
+          <li><a href="/pessoa/form">Formulario</a></li>
+          <li><a href="/pessoa">Listagem</a></li>
+          <li><a href="#!">Faq</a></li>
         </ul>
-      </aside>
-    </main>
 
-    <!-- And here is our main footer that is used across all the pages of our website -->
+      </div>
+    </header>
+  </nav>
 
-    <footer>
-      <p>©Copyright 2050 by nobody. All rights reversed.</p>
-    </footer>
-  </body>
+  <!-- Here is our page's main content -->
+  <main class="container">
+    <!-- It contains an article -->
+    <article>
+      <h1>Article heading</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
+        lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
+        viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
+        et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
+        congue enim, ut porta lorem lacinia consectetur.
+      </p>
+
+    </article>
+    <div class="row">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-content card-small">
+          <img src="/View/resource/img1.png"/>
+          <span class="card-title">Spuleta</span>
+        </div>
+        <div class="card-content">
+          <p>Sou um cãozinho muito bonzinho e esperto</p>
+        </div>
+        <div class="card-action">
+          <a href="#">Adote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="card-image">
+      <img src="/View/resource/img1.png" class="card" width="300px" alt="dogs">
+      <span class="card-title">Spuleta</span>
+      <div class="card-action">
+        <a href="#">Adote</a>
+      </div>
+      <img src="/View/resource/img1.png" class="card" width="300px" alt="dogs">
+      <img src="/View/resource/img1.png" class="card" width="300px" alt="dogs">
+      <img src="/View/resource/img1.png" class="card" width="300px" alt="dogs">
+      <img src="/View/resource/img2.png" class="card" width="300px" alt="dogs">
+      <img src="/View/resource/img2.png" class="card" width="300px" alt="dogs">
+      <img src="/View/resource/img2.png" class="card" width="300px" alt="dogs">
+      <img src="/View/resource/img2.png" class="card" width="300px" alt="dogs">
+      <img src="/View/resource/img1.png" class="card" width="300px" alt="dogs">
+      <img src="/View/resource/img1.png" class="card" width="300px" alt="dogs">
+      <img src="/View/resource/img1.png" class="card" width="300px" alt="dogs">
+      <img src="/View/resource/img1.png" class="card" width="300px" alt="dogs">
+    </div>
+
+    <!-- the aside content can also be nested within the main content -->
+    <aside>
+      <h2>Related</h2>
+
+      <ul>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Oh I do like to be beside the sea</a></li>
+        <li><a href="#">Although in the North of England</a></li>
+        <li><a href="#">It never stops raining</a></li>
+        <li><a href="#">Oh well…</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- And here is our main footer that is used across all the pages of our website -->
+
+  <Footer class="page-footer">
+    <div class="container">
+
+      <p> Contato</p>
+      <p> Trabalhe Conosco</p>
+    </div>
+  </Footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
 </html>
